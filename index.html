@@ -6,6 +6,7 @@
     <!--contain meta-data
     (data about your data)-->
     <title>My Fav SW Chara</title> <!--page title-->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--viewport scale-->
@@ -19,48 +20,52 @@
     <h2>
         Obi-Wan Kenobi
     </h2>
+    <!--<h1 style="color:red">This line changes style based on CSS!</h1>-->
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Ben_Kenobi.png" alt="Obi-wan" />
-    <p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Ben_Kenobi.png" alt="Obi-wan" class="center" />
+    <p class="JediBlue">
         A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force.<br>
         He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, <br>
         and guided Luke Skywalker as a mentor.
     </p>
 
-    <h3>
-        APPEARANCES
-    </h3>
+    <div >
+        <h3 class="lightBox">
+            APPEARANCES
+        </h3>
 
-    <ol>
-        <!--with 1234,<ul>is the list without num-->
-        <li> Star Wars: A New Hope </li>
-        <li> Star Wars: The Empire Strikes Back </li>
-        <li> Star Wars: Return of the Jedi </li>
-        <li> Star Wars: The Phantom Menace </li>
-        <li> Star Wars: Attack of the Clones </li>
-        <li> Star Wars: Revenge of the Sith </li>
-        <li> Star Wars Rebels </li>
-        <li> Star Wars: The Clone Wars </li>
-    </ol>
+        <ol class="JediBlue">
+            <!--with 1234,<ul>is the list without num-->
+            <li> Star Wars: A New Hope </li>
+            <li> Star Wars: The Empire Strikes Back </li>
+            <li> Star Wars: Return of the Jedi </li>
+            <li> Star Wars: The Phantom Menace </li>
+            <li> Star Wars: Attack of the Clones </li>
+            <li> Star Wars: Revenge of the Sith </li>
+            <li> Star Wars Rebels </li>
+            <li> Star Wars: The Clone Wars </li>
+        </ol>
+    </div>
 
-    <form>
-        Your personal favorite Star Wars Movie <input type="text">
-        <input type="submit" value="Submit">
-    </form>
+        <h3 class="lightBox">
+           AFFILIATIONS
+        </h3>
+     <div>
+          <p class="JediBlue">
+              Jedi Order
+          </p>
+     </div>
 
-    <h3>
-        AFFILIATIONS
-    </h3>
-    <p>Jedi Order</p>
 
-    <h3>
+
+    <h3 class="lightBox">
         OFFICAL TRAILER
     </h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3Yh_6_zItPU"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
-    <h3> 
+    <h3 class="lightBox">
         LEARN MORE
     </h3>
     <a href="https://www.starwars.com/databank/obi-wan-kenobi">StarWars.com</a>
