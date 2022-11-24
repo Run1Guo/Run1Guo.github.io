@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <h1 id="heading1"> The heading </h1>
+    <p id="p1">A paragraph</p>
+    <p id="p2">Another paragraph</p>
+    <p id="p3">Yet another paragraph</p>
+    <input type="button" value="Click me!" id="mybutton">
+
+    <script>
+        //logIn();
+        var button = document.querySelector("#mybutton");
+        var header_1 = document.querySelector("#heading1");
+        var paragraph_1 = document.querySelector("#p1");
+        var paragraph_2 = document.querySelector("#p2");
+        var paragraph_3 = document.querySelector("#p3");
+
+        //element.addEventListener(type, functionToCall)
+        button.addEventListener("click", isClicked);
+        header_1.addEventListener("mouseover", blueBG);
+        header_1.addEventListener("mouseout", whiteBG);
+
+        paragraph_1.addEventListener("click", changeText);
+        paragraph_2.addEventListener("click", changeText);
+        paragraph_3.addEventListener("click", changeText);
+
+        paragraph_2.style.backgroundColor = "red";
+
+
+        function changeText()
+        {
+            this.textContent = "This is " + this.id;
+            //The same
+            //if (this.id == "p1")
+            //{
+            //    this.textContent = "This is p1";
+            //}
+            //else
+            //{
+            //    this.textContent = "This is p2";
+            //}
+        }
+
+        function logIn()
+        {
+            var userName = prompt("Please enter your username");
+            if (userName == "wrench") {
+                alert("Welcom Back Wrench");
+            }
+            else {
+                alert("THE FK R U?!");
+            }
+        }
+
+        function isClicked()
+        {
+            paragraph_3.textContent = "is Clicked!";
+        }
+
+        function blueBG()
+        {
+            header_1.style.backgroundColor = "blue";
+        }
+        function whiteBG()
+        {
+            header_1.style.backgroundColor = "white";
+        }
+
+    </script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <h1> Welcome to the Harry Potter Quiz! </h1>
+    <p>Welcome Muggle! Which year was the first Harry Potter Book released?</p>
+    <ul>
+        <li id="ans1">1997</li>
+        <li id="ans2">1999</li>
+        <li id="ans3">2003</li>
+    </ul>
+    <p id="ansbox">Correct answer will be shown here</p>
+    <script>
+        var l1 = document.querySelector("#ans1");
+        var l2 = document.querySelector("#ans2");
+        var l3 = document.querySelector("#ans3");
+        var ansbox = document.querySelector("#ansbox");
+
+        l1.addEventListener("click", resultCorrect);
+        l2.addEventListener("click", resultWrong2);
+        l3.addEventListener("click", resultWrong3);
+
+        function resultCorrect()
+        {
+            l1.style.backgroundColor = "green";
+            ansbox.textContent = "You got it right!"
+        }
+        function resultWrong2()
+        {
+            l2.style.backgroundColor = "red";          
+            ansbox.textContent = "Correct answer  is 1997!"
+
+        }
+        function resultWrong3()
+        {          
+            l3.style.backgroundColor = "red";
+            ansbox.textContent = "Correct answer  is 1997!"
+        }
+
+
+    </script>
+</body>
+</html>-->
+
+

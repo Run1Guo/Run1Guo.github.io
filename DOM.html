@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <h1> The heading </h1>
+    <p id="pr_1">A paragraph</p>
+    <p id="special">A second paragraph</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <script>
+        var heading_1 = document.querySelector("h1");
+        heading_1.style.color = "aqua";
+        heading_1.style.fontStyle = "italic";
+
+        var para_2 = document.querySelector("#special");
+        para_2.textContent="content change!"
+        para_2.style.fontWeight = "bold";
+
+        var para_1 = document.querySelector("#pr_1");
+        para_1.style.backgroundColor = "red";
+
+        var list = document.querySelector("ul");
+        list.innerHTML = "<li>item1JS</li> <li>item1JS</li> <li> item2JS</li> ";
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <h1> Welcome to the Harry Potter Quiz! </h1>
+    <p>Welcome Muggle! Which year was the first Harry Potter Book released?</p>
+    <ul>
+        <li id="CorrectAns">1997</li>
+        <li id="WorngAns_1">1999</li>
+        <li id="WorngAns_2">2003</li>
+    </ul>
+    <p id="AnsBox">Correct answer will be shown here</p>
+    <script>
+        var ans = prompt("Which year was the first Harry Potter Book released ? ");
+        if (ans == "1997") {
+            var CorrectAnswer = document.querySelector("#CorrectAns");
+            CorrectAnswer.style.backgroundColor = "green";
+
+            var AnswerBox = document.querySelector("#AnsBox");
+            AnswerBox.textContent = "Your answer is " + ans + ", thats correct!";
+        }
+        else if (ans == "1999")
+        {
+            var WorngAns = document.querySelector("#WorngAns_1");
+            WorngAns.style.backgroundColor = "red";
+
+            AnswerBox = document.querySelector("#AnsBox");
+            AnswerBox.textContent = "Your answer is " + ans + ", thats Incorrect!";
+        }
+        else if (ans == "2003")
+        {
+            var WorngAns = document.querySelector("#WorngAns_2");
+            WorngAns.style.backgroundColor = "red";
+
+            AnswerBox = document.querySelector("#AnsBox");
+            AnswerBox.textContent = "Your answer is " + ans + ", thats Incorrect!";
+        }
+        else
+        {
+            AnswerBox = document.querySelector("#AnsBox");
+            AnswerBox.style.color = "red";
+            AnswerBox.style.fontStyle = "italic"
+            AnswerBox.textContent = "Dont Write gibberish!";
+        }
+
+
+    </script>
+</body>
+</html>
